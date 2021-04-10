@@ -102,13 +102,11 @@ int main (void)
 
     /* Shut down gfx mode and return to textmode */
     tgi_done();
+    tgi_uninstall ();
     // User petscii fonts 
     cbm_k_bsout(CH_FONT_UPPER);
-    textcolor(14);
-    bordercolor(14);
-    bgcolor(6);
-   
 
+   
     /* Done */
     return EXIT_SUCCESS;
 
