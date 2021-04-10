@@ -13,8 +13,8 @@
 
     Test using CC65 hires graphics capacity and look at speed of for loops
     To speed up things as much as possible we generate stars beforehand
-    and store the X and Y coordinates for the pixels in array
-    Then we just looop over a single looop and fetch coordinates
+    and store the X and Y coordinates for the pixels in arrays.
+    Then we just looop over a single loop and fetch coordinates
     for the stars from the arrays and plot them. T
 
     We also use unsigned char and values below 256 to avoid int 
