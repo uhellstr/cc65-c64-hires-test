@@ -1,10 +1,10 @@
 ALL_C = $(wildcard *.c) $(wildcard *.h)
 
 all: $(ALL_C)
-	cl65 -Oirs -Cl -t c64 -o GRAPHIC.PRG -l graphics.list graphics.c
+	cl65 -Oirs -Cl -t c64 -o graphics.prg -l graphics.list graphics.c
 
 clean:
-	rm -f *.PRG *.list *.o
+	rm -f *.list *.o
 
 crunch:
-	exomizer sfx sys -t 64  GRAPHIC.PRG -o stars.prg
+	exomizer sfx sys -t 64  graphics.prg  -o stars.prg
